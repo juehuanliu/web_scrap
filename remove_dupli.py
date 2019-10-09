@@ -6,7 +6,7 @@ temp = {}
 os.chdir("F:/PycharmProjects/web scrape/tech")
 count = 0
 with open('cleaned_tech.csv','w') as new_file:
-    test_writer = csv.writer(new_file,delimiter = ",")
+    test_writer = csv.writer(new_file, delimiter = ",")
     with open('merged_finance.csv', 'r') as read_file:
         test_read = csv.reader(read_file, delimiter=",")
         for line in test_read:
